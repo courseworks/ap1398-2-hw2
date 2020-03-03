@@ -12,6 +12,11 @@ Dr.Amir Jahanshahi
 Deadline: Wednesday, 28 Esfand - 23:00
 </center>
 
+# Introduction
+In this homework you're going to estimate an AP student's grade again! but in a different method using Linear Algebra! As you might have guessed, you will be doing this by using some matrices and functions defined on them like determinant, inverse, transpose , etc. There are some **Question**s in this serie. Remember to write their answer in your report file. You must not alter any of the given prototypes, but you're free to add whatever you want to both **Matrix.cpp** and **aphw2.cpp** files. By the way, you must write **ALL** of your codes in those 2 files! You *must* not alter the **main.cpp** again!
+
+<img src="staff/a.jpg" width="300" class="center" />
+
 # Matrix Class
 Implement a **Matrix** class that represents a mathematical matrix. It must have a *private* **data** variable which is the data of the matrix. Besides, you must have the size of the matrix too. So your class will also have a *private* **size** variable which is a 2-element array of *size_t*. You must implement it with a ```std::array<size_t,2>``` data type. The first element of size will be number of rows and the second one will be number of columns. As it might have passed your mind, so far, user doesn't have any access to size since it is private, so you must implement **getSize()** function for the user in the *public* part.
 
@@ -90,6 +95,8 @@ Matrix f {a * b.T()};
 f.show();
 ```
 
+<img src="staff/b.jpg" width="300" class="center" />
+
 # Other Functions
 In the **aphw2.cpp** you must implement the following functions.
 
@@ -126,13 +133,13 @@ If you're here, congratulations! Now you have lots of abilities and power becaus
 
 As we'll explain in the last part of TA class for linear algebra lovers, the estimation problem would turn into the following matrix equation.
 
-<img src="staff/hw2f1.png" width="300" class="center" />
+<img src="staff/hw2f1.png" width="100" class="center" />
 
-<img src="staff/hw2f2.png" width="600" class="center" />
+<img src="staff/hw2f2.png" width="200" class="center" />
 
 For solving this equation we have
 
-<img src="staff/hw2f3.png" width="800" class="center" />
+<img src="staff/hw2f3.png" width="300" class="center" />
 
 So from the last formula, you can and must find the best weights (w) for estimating grades.
 
@@ -147,3 +154,4 @@ If you've reached here, congratulations, you can buy yourself a chocolate! Just 
 ```
 Matrix predict(const char*, Matrix& w, bool disp=false);
 ```
+<img src="staff/c.jpg" width="300" class="center" />
