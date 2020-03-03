@@ -126,13 +126,13 @@ If you're here, congratulations! Now you have lots of abilities and power becaus
 
 As we'll explain in the last part of TA class for linear algebra lovers, the estimation problem would turn into the following matrix equation.
 
-$X w = y$
+<img src="staff/hw2f1.png" width="300" class="center" />
 
-$w = [w_0, w_1  ...  ,w_6]^T$
+<img src="staff/hw2f2.png" width="600" class="center" />
 
 For solving this equation we have
 
-$ w = (X^TX)^{-1}X^Ty$
+<img src="staff/hw2f3.png" width="800" class="center" />
 
 So from the last formula, you can and must find the best weights (w) for estimating grades.
 
