@@ -119,12 +119,12 @@ In the **aphw2.cpp** you must implement the following functions.
   ```
 
 *   **getData**: This function is very similar to the last homework. However, there are some differences! first of all, you have a second argument **add_bias** which is a *bool* and by default is **true**. In case it is **true**, it must add a column of **1**s just like last homework as the first column of data. When it is **false**, your function must not add those **1**s and it must simply import the data in the file. Note that you must not normalize your data in this function. 
-```
+```c++
 std::vector<std::vector<double>> getData(const char* filename, bool add_bias=true);
 ```
 
 *   **findMinNoOfMultiplications**: This function must find the minimum number of required scalar multiplications in the so-called *Matrix Chain Multiplication* problem discussed in the TA class. You must use **Dynamic Programming** approach to do this.
-```
+```c++
 size_t findMinNoOfMultiplications(std::vector<Matrix>& v);
 ```
 
@@ -145,13 +145,13 @@ So from the last formula, you can and must find the best weights (w) for estimat
 
 Implement **findWeights** function which gets the name or path of the csv data file and returns the proper weights founded from the above formula as a Matrix object. Note that your function must work well with arbitrary csv files with the following assumption that the last column is the target (desired output) and the other columns are the inputs (features).
 
-```
+```c++
   Matrix findWeights(const char*);
 ```
 
 If you've reached here, congratulations, you can buy yourself a chocolate! Just one more thing...Implement **predict** function that gets the data file name with the weights matrix and a bool **disp** argument. It returns the estimated outputs as a Matrix and also if *disp* is true it must display each prediction with its corresponding target value in a beauty manner (Just like *displayOutput* function in the last homework.
 
-```
+```c++
 Matrix predict(const char*, Matrix& w, bool disp=false);
 ```
 <img src="staff/c.jpg" width="400" class="center" />
