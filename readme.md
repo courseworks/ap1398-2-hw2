@@ -27,7 +27,7 @@ Implement a **Matrix** class that represents a mathematical matrix. It must have
 *   ```Matrix(std::vector<std::vector<double>> data)```;
 *   ```Matrix (std::unique_ptr<std::unique_ptr<double[]>[]> data, size_t m, size_t n);``` where m and n are the number of rows and columns.
 
-  **Question1**: Is this a true constructor? If no explain why? What would you do to repair it? Do it!
+  **Question1**: Is the above constructor a correct one? If no explain why? What would you do to repair it? Do it!
 *   ```Matrix (size_t m, size_t n, bool ones=true);``` where m and n are number of rows and columns. if **ones** flag is *true*, each element of the matrix must be 1. Otherwise, it must be 0.
 
 **Matrix** class must have the following member variables.
