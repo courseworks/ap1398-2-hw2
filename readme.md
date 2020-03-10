@@ -90,7 +90,7 @@ In addition, you're supposed to implement the Matrix class such that the followi
 Matrix c {a + b};
 Matrix d {a.inv()*b};
 d[0][1] = 5;
-Matrix e {inverse(a-b)};
+Matrix e {inv(a-b)};
 Matrix f {a * b.T()};
 f.show();
 ```
